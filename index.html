@@ -4,82 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김원서 포트폴리오</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .profile {
-            background: #f5f5f5;
-            padding: 15px;
-            border-radius: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>김원서 포트폴리오</h1>
+<header>
+    <nav>
+        <div class="logo">KIM WONSEO</div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkToggle">🌙</button>
+    </nav>
 
-    <div class="section profile">
-        <h2>👋 자기소개</h2>
-        <p>김원서<br>
-        소프트웨어융합대학 자율전공 20233378<br>
-        게임 디렉터를 목표로 다양한 분야를 공부 중입니다!</p>
+    <section class="hero">
+        <h1>게임 디렉터를 향한 여정</h1>
+        <p>Game Designer · Game Director · AI/ML Engineer · Cyber Security Engineer</p>
+        <a href="about.html" class="btn">더 알아보기</a>
+    </section>
+</header>
+
+<section class="container">
+    <h2>🔥 기술 스택</h2>
+    <div class="skills">
+        <span>C</span><span>Python</span><span>Java</span>
+        <span>Unity</span><span>Unreal</span><span>Godot</span>
+        <span>3dsMax</span><span>SketchUp</span>
+        <span>Photoshop</span><span>Clip Studio</span>
+        <span>Spreadsheet</span><span>MS Office</span>
     </div>
+</section>
 
-    <div class="section">
-        <h2>📚 학습 이력</h2>
-        <h3>현재 수강 중인 과목</h3>
-        <ul>
-            <li>godot 프로그래밍</li>
-            <li>메타버스 게임 제작</li>
-            <li>게임 스토리텔링</li>
-        </ul>
+<footer>
+    © 2025 김원서. All Rights Reserved.
+</footer>
 
-        <h3>이수 완료한 주요 전공 과목</h3>
-        <ul>
-            <li>컴퓨터프로그래밍</li>
-            <li>파이썬프로그래밍</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>🛠 기술 스택</h2>
-        <ul>
-            <li>C 언어, Python, Java</li>
-            <li>Unity, Unreal, Godot</li>
-            <li>3ds Max, SketchUp</li>
-            <li>Clip Studio, Photoshop</li>
-            <li>Spreadsheet, MS Office 등 문서 프로그램</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>⭐ 관심 분야 및 목표</h2>
-        <p>희망 직무:</p>
-        <ul>
-            <li>Game Designer</li>
-            <li>Game Director</li>
-            <li>AI/ML Engineer</li>
-            <li>Cyber Security Engineer</li>
-        </ul>
-        <p>장기 목표:</p>
-        <ul>
-            <li>해외 대기업 근무</li>
-            <li>유학 후 석 · 박사 학위 취득</li>
-        </ul>
-    </div>
-
+<script>
+    document.getElementById("darkToggle").onclick = function () {
+        document.body.classList.toggle("dark");
+    };
+</script>
 </body>
 </html>
