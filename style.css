@@ -1,1 +1,101 @@
+/* 기본 레이아웃 */
+body {
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    background: #ffffff;
+    color: #333;
+    transition: 0.3s;
+}
+
+.dark {
+    background: #1e1e1e;
+    color: #f1f1f1;
+}
+
+/* 네비게이션 */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #222;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav .menu a.active {
+    border-bottom: 2px solid #00c3ff;
+}
+
+#darkToggle {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+}
+
+/* hero 영역 */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #002b5b, #0091ff);
+    color: white;
+}
+
+.hero .btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: #002b5b;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 본문 */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* 스킬 태그 */
+.skills span {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.dark .skills span {
+    background: #333;
+}
+
+/* 푸터 */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    background: #efefef;
+}
+
+.dark footer {
+    background: #111;
+}
 
